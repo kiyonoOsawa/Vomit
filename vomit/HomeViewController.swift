@@ -35,6 +35,20 @@ class HomeViewController: UIViewController,UITableViewDataSource {
         return cell!
         
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("{cellIdentifier}", forIndexPath: indexPath) as! HogeCell
+        
+        // セルの背景色はなし
+         cell.backgroundColor = UIColor.clearColor()
+        
+        // 選択された背景色を黒に設定
+        var cellSelectedBgView = UIView()
+        cellSelectedBgView.backgroundColor = UIColor.black
+        cell.selectedBackgroundView = cellSelectedBgView
+        
+        return cell
+    }
 
     /*
     // MARK: - Navigation
