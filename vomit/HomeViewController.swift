@@ -8,18 +8,19 @@
 
 import UIKit
 
-class HomeViewController: UIViewController,UITableViewDataSource {
+class HomeViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
     //StoryBoardで扱うTableViewを宣言
     @IBOutlet var table: UITableView!
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         //テーブルビューのデータソースメゾットはViewControllerクラスに書くよ、という設定
         table.dataSource = self
+        table.delegate = self
     }
     
     //セルの数を設定
@@ -36,18 +37,9 @@ class HomeViewController: UIViewController,UITableViewDataSource {
         
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("{cellIdentifier}", forIndexPath: indexPath) as! HogeCell
-        
-        // セルの背景色はなし
-         cell.backgroundColor = UIColor.clearColor()
-        
-        // 選択された背景色を黒に設定
-        var cellSelectedBgView = UIView()
-        cellSelectedBgView.backgroundColor = UIColor.black
-        cell.selectedBackgroundView = cellSelectedBgView
-        
-        return cell
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(String(indexPath.row))
+        self.performSegue(withIdentifier: "toDetail", sender: nil)
     }
 
     /*
