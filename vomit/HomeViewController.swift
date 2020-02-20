@@ -12,6 +12,9 @@ class HomeViewController: UIViewController,UITableViewDataSource, UITableViewDel
     
     //StoryBoardで扱うTableViewを宣言
     @IBOutlet var table: UITableView!
+    
+    let userDefault = UserDefaults()
+    var vomitsArray: [[String]] = []
 
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,17 +24,24 @@ class HomeViewController: UIViewController,UITableViewDataSource, UITableViewDel
         //テーブルビューのデータソースメゾットはViewControllerクラスに書くよ、という設定
         table.dataSource = self
         table.delegate = self
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print(userDefault.array(forKey: "vomit") as! [String])
+        vomitsArray.append(userDefault.array(forKey: "vomit") as! [String])
+        table.reloadData()
     }
     
     //セルの数を設定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return vomitsArray.count
     }
     //ID付きのセルを取得して、セル付属のtextLabelに「テスト」と表示させてみる
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
-        cell?.textLabel?.text = "テスト"
+        cell?.textLabel?.text = vomitsArray[indexPath.row][0]
         
         return cell!
         

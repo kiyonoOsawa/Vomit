@@ -9,6 +9,10 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    @IBOutlet var subTextView: UITextView!
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var characterImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

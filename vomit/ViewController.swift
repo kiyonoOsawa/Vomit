@@ -10,15 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var parameters: [String : String] = [:]
+    
     @IBOutlet var titleField: UITextField!
     @IBOutlet var settingButton: UIButton!
     @IBOutlet var saveButton: UIButton!
     @IBOutlet weak var dateField: UITextField!
+    @IBOutlet var maneTextView: UITextView!
+    @IBOutlet var vomitImageView: UIImageView!
+    @IBOutlet var levelLabrl: UILabel!
+    @IBOutlet var vomitLabel: UILabel!
     
     //UIDatePickerを定義するための変数
     var datePicker: UIDatePicker = UIDatePicker()
     var vomitArray: [String] = []
-    let userDefaults = UserDefaults()
+    let userDefault = UserDefaults()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,7 +83,10 @@ class ViewController: UIViewController {
     
     @IBAction func save() {
         vomitArray.append(titleField.text!)
-        userDefaults.set(vomitArray, forKey: "vomit")
+        vomitArray.append(dateField.text!)
+        vomitArray.append(maneTextView.text!)
+        print(vomitArray)
+        userDefault.set(vomitArray, forKey: "vomit")
     }
     
     @IBAction func dismiss() {

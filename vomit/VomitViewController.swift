@@ -10,62 +10,53 @@ import UIKit
 
 class VomitViewController: UIViewController {
     
-    @IBOutlet var label: UILabel!
-   
-    
+    @IBOutlet var vomitlabel: UILabel!
     @IBAction func sliderChanged(_ sender: UISlider) {
-        label.text = String(Int(round(sender.value * 100)))
-        
+    vomitlabel.text = String(Int(round(sender.value * 100)))
     }
+    @IBOutlet var vomitImageView: UIImageView!
     
     override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
-        label.text = "vomit"
-    
+        vomitlabel.text = "vomit"
     }
-    
     @IBAction func happy() {
-        label.text = String()
-        
+        vomitImageView.image = UIImage(named: "mori0.jpg")
     }
-    
     @IBAction func trust() {
-        label.text = String()
-        
+        vomitImageView.image = UIImage(named: "mori1.jpeg")
     }
-    
     @IBAction func scared() {
-        label.text = String()
-        
+        vomitImageView.image = UIImage(named: "mori2.jpg")
     }
-    
     @IBAction func surprise() {
-        label.text = String()
-        
+        vomitImageView.image = UIImage(named: "mori3.jpg")
     }
-    
     @IBAction func sadder() {
-        label.text = String()
-        
+        vomitImageView.image = UIImage(named: "mori4.jpg")
     }
-    
     @IBAction func dislike() {
-        label.text = String()
-        
+        vomitImageView.image = UIImage(named: "mori5.jpg")
     }
-    
     @IBAction func anger() {
-        label.text = String()
-        
+        vomitImageView.image = UIImage(named: "mori6.jpg")
     }
-    
     @IBAction func expectation() {
-        label.text = String()
-        
+        vomitImageView.image = UIImage(named: "mori7.jpeg")
     }
-   
     
+    func segueToSecondViewController() {
+        self.performSegue(withIdentifier: "toSecondViewController", sender: nil)
+    }
+    @IBAction func okButton() {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+        if segue.identifier == "toSecondViewController" {
+            let secondViewController = segue.destination as! ViewController
+            secondViewController.parameters = sender as! [String : String]
+        }
+    }
     
     
     
@@ -78,6 +69,5 @@ class VomitViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
-
 }
+
