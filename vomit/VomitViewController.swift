@@ -47,15 +47,18 @@ class VomitViewController: UIViewController {
     }
     
     func segueToSecondViewController() {
-        self.performSegue(withIdentifier: "toSecondViewController", sender: nil)
+        self.performSegue(withIdentifier: "toViewController", sender: nil)
     }
     @IBAction func okButton() {
         self.navigationController?.popToRootViewController(animated: true)
     }
-        if segue.identifier == "toSecondViewController" {
-            let secondViewController = segue.destination as! ViewController
-            secondViewController.parameters = sender as! [String : String]
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toViewController" {
+            let ViewController = segue.destination as! ViewController
+            ViewController.parameters = sender as! [String : String]
         }
+    }
     }
     
     
@@ -69,5 +72,5 @@ class VomitViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-}
+
 
