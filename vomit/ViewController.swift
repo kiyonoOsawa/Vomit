@@ -17,10 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet var saveButton: UIButton!
     @IBOutlet weak var dateField: UITextField!
     @IBOutlet var maneTextView: UITextView!
+    
     @IBOutlet var vomitImageView: UIImageView!
-    @IBOutlet var levelLabrl: UILabel!
+    @IBOutlet var levelLabl: UILabel!
     @IBOutlet var vomitLabel: UILabel!
     
+    var image: UIImageView!
     //UIDatePickerを定義するための変数
     var datePicker: UIDatePicker = UIDatePicker()
     var vomitArray: [String] = []
@@ -49,6 +51,10 @@ class ViewController: UIViewController {
         // インプットビュー設定(紐づいているUITextfieldへ代入)
         dateField.inputView = datePicker
         dateField.inputAccessoryView = toolbar
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        vomitImageView = image
     }
     
     // UIDatePickerのDoneを押したら発火

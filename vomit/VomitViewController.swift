@@ -12,65 +12,87 @@ class VomitViewController: UIViewController {
     
     @IBOutlet var vomitlabel: UILabel!
     @IBAction func sliderChanged(_ sender: UISlider) {
-    vomitlabel.text = String(Int(round(sender.value * 100)))
+        vomitlabel.text = String(Int(round(sender.value * 100)))
     }
     @IBOutlet var vomitImageView: UIImageView!
+    @IBOutlet var vomitnamelabel: UILabel!
+    @IBOutlet var happy: UILabel!
+    @IBOutlet var fun: UILabel!
+    @IBOutlet var exciting: UILabel!
+    @IBOutlet var strive: UILabel!
+    @IBOutlet var dangerous: UILabel!
+    @IBOutlet var dislike: UILabel!
+    @IBOutlet var angry: UILabel!
+    @IBOutlet var anxiety: UILabel!
     
     override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view.
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
         vomitlabel.text = "vomit"
     }
-    @IBAction func happy() {
-        vomitImageView.image = UIImage(named: "mori0.jpg")
+    @IBAction func vomit0() {
+        vomitImageView.image = UIImage(named: "vomit0.jpg")
+        vomitnamelabel.text = happy.text
     }
-    @IBAction func trust() {
-        vomitImageView.image = UIImage(named: "mori1.jpeg")
+    @IBAction func vomit1() {
+        vomitImageView.image = UIImage(named: "vomit1.jpg")
+       vomitnamelabel.text = fun.text
     }
-    @IBAction func scared() {
-        vomitImageView.image = UIImage(named: "mori2.jpg")
+    @IBAction func vomit2() {
+        vomitImageView.image = UIImage(named: "vomit2.jpg")
+        vomitnamelabel.text = exciting.text
     }
-    @IBAction func surprise() {
-        vomitImageView.image = UIImage(named: "mori3.jpg")
+    @IBAction func vomit3() {
+        vomitImageView.image =
+            UIImage(named: "vomit3.jpg")
+        vomitnamelabel.text = strive.text
     }
-    @IBAction func sadder() {
-        vomitImageView.image = UIImage(named: "mori4.jpg")
+    @IBAction func vomit4() {
+        vomitImageView.image = UIImage(named: "vomit4.jpg")
+        vomitnamelabel.text = dangerous.text
     }
-    @IBAction func dislike() {
-        vomitImageView.image = UIImage(named: "mori5.jpg")
+    @IBAction func vomit5() {
+        vomitImageView.image = UIImage(named: "vomit5.jpg")
+        vomitnamelabel.text = dislike.text
     }
-    @IBAction func anger() {
-        vomitImageView.image = UIImage(named: "mori6.jpg")
+    @IBAction func vomit6() {
+        vomitImageView.image = UIImage(named: "vomit6.jpg")
+        vomitnamelabel.text = angry.text
     }
-    @IBAction func expectation() {
-        vomitImageView.image = UIImage(named: "mori7.jpeg")
-    }
-    
-    func segueToSecondViewController() {
-        self.performSegue(withIdentifier: "toViewController", sender: nil)
-    }
-    @IBAction func okButton() {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toViewController" {
-            let ViewController = segue.destination as! ViewController
-            ViewController.parameters = sender as! [String : String]
-        }
-    }
+    @IBAction func vomit7() {
+        vomitImageView.image = UIImage(named: "vomit7.jpg")
+        vomitnamelabel.text = anxiety.text
     }
     
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    @IBAction func okButton(_ sender: Any?) {
+        //        let nextVC = self.presentingViewController as! ViewController
+        //        nextVC.vomitImageView = vomitImageView
+        //        dismiss(animated: true, completion: nil)
+        let preNC = navigationController?.viewControllers[0] as! ViewController
+        preNC.vomitImageView = self.vomitImageView
+    self.navigationController?.popViewController(animated: true)
+        
+        preNC.image = vomitImageView
+        preNC.levelLabl = vomitlabel
+        preNC.vomitLabel = vomitnamelabel
+
+}
 
 
+
+//@IBOutlet var vomitImageView: UIImageView!
+//@IBOutlet var levelLabrl: UILabel!
+//@IBOutlet var vomitLabel: UILabel!
+
+
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destination.
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+}

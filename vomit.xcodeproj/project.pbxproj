@@ -8,14 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6C03761923CAC58700E6E436 /* VomitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03761823CAC58700E6E436 /* VomitViewController.swift */; };
-		6C2D869623EFDAE30054B5EC /* mori0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D869523EFDAE30054B5EC /* mori0.jpg */; };
-		6C2D869823EFDAE90054B5EC /* mori1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D869723EFDAE90054B5EC /* mori1.jpeg */; };
-		6C2D869A23EFDAF00054B5EC /* mori2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D869923EFDAF00054B5EC /* mori2.jpg */; };
-		6C2D869C23EFDAF80054B5EC /* mori3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D869B23EFDAF80054B5EC /* mori3.jpg */; };
-		6C2D869E23EFDAFD0054B5EC /* mori4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D869D23EFDAFD0054B5EC /* mori4.jpg */; };
-		6C2D86A023EFDB040054B5EC /* mori5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D869F23EFDB040054B5EC /* mori5.jpg */; };
-		6C2D86A223EFDB0A0054B5EC /* mori6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D86A123EFDB0A0054B5EC /* mori6.jpg */; };
-		6C2D86A423EFDB100054B5EC /* mori7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D86A323EFDB100054B5EC /* mori7.jpeg */; };
 		6C61E39D23C0E17B00DC6D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61E39C23C0E17B00DC6D71 /* AppDelegate.swift */; };
 		6C61E39F23C0E17B00DC6D71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61E39E23C0E17B00DC6D71 /* SceneDelegate.swift */; };
 		6C61E3A123C0E17B00DC6D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61E3A023C0E17B00DC6D71 /* ViewController.swift */; };
@@ -27,6 +19,14 @@
 		6C61E3C223C0E17B00DC6D71 /* vomitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61E3C123C0E17B00DC6D71 /* vomitUITests.swift */; };
 		6CB2E74423DD57CE00F14606 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2E74323DD57CE00F14606 /* DetailViewController.swift */; };
 		6CB2E74623DD6A7800F14606 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2E74523DD6A7800F14606 /* HomeViewController.swift */; };
+		6CFDA425240240EF00B25B52 /* vomit0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDA424240240EF00B25B52 /* vomit0.jpg */; };
+		6CFDA427240240FD00B25B52 /* vomit1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDA426240240FD00B25B52 /* vomit1.jpg */; };
+		6CFDA4292402410B00B25B52 /* vomit2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDA4282402410B00B25B52 /* vomit2.jpg */; };
+		6CFDA42B2402411800B25B52 /* vomit3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDA42A2402411800B25B52 /* vomit3.jpg */; };
+		6CFDA42D2402412600B25B52 /* vomit4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDA42C2402412600B25B52 /* vomit4.jpg */; };
+		6CFDA42F2402413200B25B52 /* vomit5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDA42E2402413200B25B52 /* vomit5.jpg */; };
+		6CFDA4312402414100B25B52 /* vomit6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDA4302402414100B25B52 /* vomit6.jpg */; };
+		6CFDA4332402415700B25B52 /* vomit7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDA4322402415700B25B52 /* vomit7.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +48,6 @@
 
 /* Begin PBXFileReference section */
 		6C03761823CAC58700E6E436 /* VomitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VomitViewController.swift; sourceTree = "<group>"; };
-		6C2D869523EFDAE30054B5EC /* mori0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mori0.jpg; sourceTree = "<group>"; };
-		6C2D869723EFDAE90054B5EC /* mori1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mori1.jpeg; sourceTree = "<group>"; };
-		6C2D869923EFDAF00054B5EC /* mori2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mori2.jpg; sourceTree = "<group>"; };
-		6C2D869B23EFDAF80054B5EC /* mori3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mori3.jpg; sourceTree = "<group>"; };
-		6C2D869D23EFDAFD0054B5EC /* mori4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mori4.jpg; sourceTree = "<group>"; };
-		6C2D869F23EFDB040054B5EC /* mori5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mori5.jpg; sourceTree = "<group>"; };
-		6C2D86A123EFDB0A0054B5EC /* mori6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mori6.jpg; sourceTree = "<group>"; };
-		6C2D86A323EFDB100054B5EC /* mori7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mori7.jpeg; sourceTree = "<group>"; };
 		6C61E39923C0E17B00DC6D71 /* vomit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vomit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C61E39C23C0E17B00DC6D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C61E39E23C0E17B00DC6D71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +65,14 @@
 		6C61E3C323C0E17B00DC6D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CB2E74323DD57CE00F14606 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6CB2E74523DD6A7800F14606 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6CFDA424240240EF00B25B52 /* vomit0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vomit0.jpg; sourceTree = "<group>"; };
+		6CFDA426240240FD00B25B52 /* vomit1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vomit1.jpg; sourceTree = "<group>"; };
+		6CFDA4282402410B00B25B52 /* vomit2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vomit2.jpg; sourceTree = "<group>"; };
+		6CFDA42A2402411800B25B52 /* vomit3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vomit3.jpg; sourceTree = "<group>"; };
+		6CFDA42C2402412600B25B52 /* vomit4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vomit4.jpg; sourceTree = "<group>"; };
+		6CFDA42E2402413200B25B52 /* vomit5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vomit5.jpg; sourceTree = "<group>"; };
+		6CFDA4302402414100B25B52 /* vomit6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vomit6.jpg; sourceTree = "<group>"; };
+		6CFDA4322402415700B25B52 /* vomit7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vomit7.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,14 +130,14 @@
 				6CB2E74323DD57CE00F14606 /* DetailViewController.swift */,
 				6CB2E74523DD6A7800F14606 /* HomeViewController.swift */,
 				6C61E3A223C0E17B00DC6D71 /* Main.storyboard */,
-				6C2D869523EFDAE30054B5EC /* mori0.jpg */,
-				6C2D869723EFDAE90054B5EC /* mori1.jpeg */,
-				6C2D869923EFDAF00054B5EC /* mori2.jpg */,
-				6C2D869B23EFDAF80054B5EC /* mori3.jpg */,
-				6C2D869D23EFDAFD0054B5EC /* mori4.jpg */,
-				6C2D869F23EFDB040054B5EC /* mori5.jpg */,
-				6C2D86A123EFDB0A0054B5EC /* mori6.jpg */,
-				6C2D86A323EFDB100054B5EC /* mori7.jpeg */,
+				6CFDA424240240EF00B25B52 /* vomit0.jpg */,
+				6CFDA426240240FD00B25B52 /* vomit1.jpg */,
+				6CFDA4282402410B00B25B52 /* vomit2.jpg */,
+				6CFDA42A2402411800B25B52 /* vomit3.jpg */,
+				6CFDA42C2402412600B25B52 /* vomit4.jpg */,
+				6CFDA42E2402413200B25B52 /* vomit5.jpg */,
+				6CFDA4302402414100B25B52 /* vomit6.jpg */,
+				6CFDA4322402415700B25B52 /* vomit7.jpg */,
 				6C61E3A823C0E17B00DC6D71 /* Assets.xcassets */,
 				6C61E3AA23C0E17B00DC6D71 /* LaunchScreen.storyboard */,
 				6C61E3AD23C0E17B00DC6D71 /* Info.plist */,
@@ -268,17 +268,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFDA4332402415700B25B52 /* vomit7.jpg in Resources */,
+				6CFDA425240240EF00B25B52 /* vomit0.jpg in Resources */,
 				6C61E3AC23C0E17B00DC6D71 /* LaunchScreen.storyboard in Resources */,
-				6C2D869823EFDAE90054B5EC /* mori1.jpeg in Resources */,
-				6C2D86A023EFDB040054B5EC /* mori5.jpg in Resources */,
-				6C2D86A423EFDB100054B5EC /* mori7.jpeg in Resources */,
 				6C61E3A923C0E17B00DC6D71 /* Assets.xcassets in Resources */,
-				6C2D869E23EFDAFD0054B5EC /* mori4.jpg in Resources */,
-				6C2D86A223EFDB0A0054B5EC /* mori6.jpg in Resources */,
+				6CFDA42B2402411800B25B52 /* vomit3.jpg in Resources */,
+				6CFDA4312402414100B25B52 /* vomit6.jpg in Resources */,
+				6CFDA42D2402412600B25B52 /* vomit4.jpg in Resources */,
 				6C61E3A423C0E17B00DC6D71 /* Main.storyboard in Resources */,
-				6C2D869C23EFDAF80054B5EC /* mori3.jpg in Resources */,
-				6C2D869623EFDAE30054B5EC /* mori0.jpg in Resources */,
-				6C2D869A23EFDAF00054B5EC /* mori2.jpg in Resources */,
+				6CFDA4292402410B00B25B52 /* vomit2.jpg in Resources */,
+				6CFDA42F2402413200B25B52 /* vomit5.jpg in Resources */,
+				6CFDA427240240FD00B25B52 /* vomit1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
